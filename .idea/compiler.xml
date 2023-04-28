@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="nowinandroid.app" target="17" />
+      <module name="nowinandroid.app-nia-catalog" target="17" />
+      <module name="nowinandroid.benchmarks" target="17" />
+      <module name="nowinandroid.core.analytics" target="17" />
+      <module name="nowinandroid.core.common" target="17" />
+      <module name="nowinandroid.core.data" target="17" />
+      <module name="nowinandroid.core.data-test" target="17" />
+      <module name="nowinandroid.core.database" target="17" />
+      <module name="nowinandroid.core.datastore" target="17" />
+      <module name="nowinandroid.core.datastore-test" target="17" />
+      <module name="nowinandroid.core.designsystem" target="17" />
+      <module name="nowinandroid.core.domain" target="17" />
+      <module name="nowinandroid.core.model" target="17" />
+      <module name="nowinandroid.core.model.main" target="17" />
+      <module name="nowinandroid.core.model.test" target="17" />
+      <module name="nowinandroid.core.network" target="17" />
+      <module name="nowinandroid.core.notifications" target="17" />
+      <module name="nowinandroid.core.testing" target="17" />
+      <module name="nowinandroid.core.ui" target="17" />
+      <module name="nowinandroid.feature.bookmarks" target="17" />
+      <module name="nowinandroid.feature.foryou" target="17" />
+      <module name="nowinandroid.feature.interests" target="17" />
+      <module name="nowinandroid.feature.search" target="17" />
+      <module name="nowinandroid.feature.settings" target="17" />
+      <module name="nowinandroid.feature.topic" target="17" />
+      <module name="nowinandroid.sync.sync-test" target="17" />
+      <module name="nowinandroid.sync.work" target="17" />
+      <module name="nowinandroid.ui-test-hilt-manifest" target="17" />
+      <module name="savannahtimes.app" target="17" />
+      <module name="savannahtimes.app-nia-catalog" target="17" />
+      <module name="savannahtimes.benchmarks" target="17" />
+      <module name="savannahtimes.catalog" target="17" />
+      <module name="savannahtimes.core.analytics" target="17" />
+      <module name="savannahtimes.core.common" target="17" />
+      <module name="savannahtimes.core.data" target="17" />
+      <module name="savannahtimes.core.data-test" target="17" />
+      <module name="savannahtimes.core.database" target="17" />
+      <module name="savannahtimes.core.datastore" target="17" />
+      <module name="savannahtimes.core.datastore-test" target="17" />
+      <module name="savannahtimes.core.domain" target="17" />
+      <module name="savannahtimes.core.model" target="17" />
+      <module name="savannahtimes.core.model.main" target="17" />
+      <module name="savannahtimes.core.model.test" target="17" />
+      <module name="savannahtimes.core.network" target="17" />
+      <module name="savannahtimes.core.notifications" target="17" />
+      <module name="savannahtimes.core.savannah" target="17" />
+      <module name="savannahtimes.core.testing" target="17" />
+      <module name="savannahtimes.core.ui" target="17" />
+      <module name="savannahtimes.feature.bookmarks" target="17" />
+      <module name="savannahtimes.feature.foryou" target="17" />
+      <module name="savannahtimes.feature.interests" target="17" />
+      <module name="savannahtimes.feature.search" target="17" />
+      <module name="savannahtimes.feature.settings" target="17" />
+      <module name="savannahtimes.feature.topic" target="17" />
+      <module name="savannahtimes.savannahcatalog" target="17" />
+      <module name="savannahtimes.sync.sync-test" target="17" />
+      <module name="savannahtimes.sync.work" target="17" />
+      <module name="savannahtimes.ui-test-hilt-manifest" target="17" />
+      <module name="speakers.app-nia-catalog" target="17" />
+      <module name="speakers.core.designsystem" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
