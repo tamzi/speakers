@@ -15,7 +15,7 @@
  */
 
 import androidx.annotation.VisibleForTesting
-import com.google.samples.apps.nowinandroid.core.network.fake.FakeAssetManager
+import com.tamzi.speakers.core.network.fake.FakeAssetManager
 import java.io.File
 import java.io.InputStream
 import java.util.Properties

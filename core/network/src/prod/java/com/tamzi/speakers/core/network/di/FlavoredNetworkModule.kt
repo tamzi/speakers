@@ -14,16 +14,19 @@
  * limitations under the License.
  */
 
-plugins {
-    id("speakers.android.feature")
-    id("speakers.android.library.compose")
-    id("speakers.android.library.jacoco")
-}
+package com.tamzi.speakers.core.network.di
 
-android {
-    namespace = "com.tamzi.speakers.feature.bookmarks"
-}
+import com.tamzi.speakers.core.network.NiaNetworkDataSource
+import com.tamzi.speakers.core.network.retrofit.RetrofitNiaNetwork
+import dagger.Binds
+import dagger.Module
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 
-dependencies {
-    implementation(libs.androidx.compose.material3.windowSizeClass)
+@Module
+@InstallIn(SingletonComponent::class)
+interface FlavoredNetworkModule {
+
+    @Binds
+    fun RetrofitNiaNetwork.binds(): NiaNetworkDataSource
 }
