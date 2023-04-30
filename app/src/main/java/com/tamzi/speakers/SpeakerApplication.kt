@@ -28,7 +28,7 @@ import javax.inject.Provider
  * [Application] class for NiA
  */
 @HiltAndroidApp
-class NiaApplication : Application(), ImageLoaderFactory {
+class SpeakerApplication : Application(), ImageLoaderFactory {
     @Inject
     lateinit var imageLoader: Provider<ImageLoader>
 

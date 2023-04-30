@@ -15,7 +15,7 @@ import com.tamzi.speakers.core.data.repository.NewsRepository
 import com.tamzi.speakers.core.data.repository.SearchContentsRepository
 import com.tamzi.speakers.core.data.repository.TopicsRepository
 import com.tamzi.speakers.core.datastore.ChangeListVersions
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 import com.tamzi.speakers.core.network.Dispatcher
 import com.tamzi.speakers.core.network.NiaDispatchers.IO
 import com.tamzi.speakers.sync.initializers.SyncConstraints
@@ -36,7 +36,7 @@ import kotlinx.coroutines.withContext
 class SyncWorker @AssistedInject constructor(
     @Assisted private val appContext: Context,
     @Assisted workerParams: WorkerParameters,
-    private val niaPreferences: NiaPreferencesDataSource,
+    private val niaPreferences: SpeakerPreferencesDataSource,
     private val topicRepository: TopicsRepository,
     private val newsRepository: NewsRepository,
     private val searchContentsRepository: SearchContentsRepository,

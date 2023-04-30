@@ -27,7 +27,7 @@ import com.tamzi.speakers.core.database.model.PopulatedNewsResource
 import com.tamzi.speakers.core.database.model.TopicEntity
 import com.tamzi.speakers.core.database.model.asExternalModel
 import com.tamzi.speakers.core.datastore.ChangeListVersions
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 import com.tamzi.speakers.core.model.data.NewsResource
 import com.tamzi.speakers.core.network.NiaNetworkDataSource
 import com.tamzi.speakers.core.network.model.NetworkNewsResource
@@ -46,7 +46,7 @@ private const val SYNC_BATCH_SIZE = 40
  * Reads are exclusively from local storage to support offline access.
  */
 class OfflineFirstNewsRepository @Inject constructor(
-    private val niaPreferencesDataSource: NiaPreferencesDataSource,
+    private val speakerPreferencesDataSource: SpeakerPreferencesDataSource,
     private val newsResourceDao: NewsResourceDao,
     private val topicDao: TopicDao,
     private val network: NiaNetworkDataSource,
@@ -74,7 +74,7 @@ class OfflineFirstNewsRepository @Inject constructor(
             },
             modelDeleter = newsResourceDao::deleteNewsResources,
             modelUpdater = { changedIds ->
-                val userData = niaPreferencesDataSource.userData.first()
+                val userData = speakerPreferencesDataSource.userData.first()
                 val hasOnboarded = userData.shouldHideOnboarding
                 val followedTopicIds = userData.followedTopics
 

@@ -17,7 +17,7 @@
 package com.tamzi.speakers.core.data.repository.fake
 
 import com.tamzi.speakers.core.data.repository.UserDataRepository
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 import com.tamzi.speakers.core.model.data.DarkThemeConfig
 import com.tamzi.speakers.core.model.data.ThemeBrand
 import com.tamzi.speakers.core.model.data.UserData
@@ -31,38 +31,38 @@ import javax.inject.Inject
  * backend.
  */
 class FakeUserDataRepository @Inject constructor(
-    private val niaPreferencesDataSource: NiaPreferencesDataSource,
+    private val speakerPreferencesDataSource: SpeakerPreferencesDataSource,
 ) : UserDataRepository {
 
     override val userData: Flow<UserData> =
-        niaPreferencesDataSource.userData
+        speakerPreferencesDataSource.userData
 
     override suspend fun setFollowedTopicIds(followedTopicIds: Set<String>) =
-        niaPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
+        speakerPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
 
     override suspend fun toggleFollowedTopicId(followedTopicId: String, followed: Boolean) =
-        niaPreferencesDataSource.toggleFollowedTopicId(followedTopicId, followed)
+        speakerPreferencesDataSource.toggleFollowedTopicId(followedTopicId, followed)
 
     override suspend fun updateNewsResourceBookmark(newsResourceId: String, bookmarked: Boolean) {
-        niaPreferencesDataSource.toggleNewsResourceBookmark(newsResourceId, bookmarked)
+        speakerPreferencesDataSource.toggleNewsResourceBookmark(newsResourceId, bookmarked)
     }
 
     override suspend fun setNewsResourceViewed(newsResourceId: String, viewed: Boolean) =
-        niaPreferencesDataSource.setNewsResourceViewed(newsResourceId, viewed)
+        speakerPreferencesDataSource.setNewsResourceViewed(newsResourceId, viewed)
 
     override suspend fun setThemeBrand(themeBrand: ThemeBrand) {
-        niaPreferencesDataSource.setThemeBrand(themeBrand)
+        speakerPreferencesDataSource.setThemeBrand(themeBrand)
     }
 
     override suspend fun setDarkThemeConfig(darkThemeConfig: DarkThemeConfig) {
-        niaPreferencesDataSource.setDarkThemeConfig(darkThemeConfig)
+        speakerPreferencesDataSource.setDarkThemeConfig(darkThemeConfig)
     }
 
     override suspend fun setDynamicColorPreference(useDynamicColor: Boolean) {
-        niaPreferencesDataSource.setDynamicColorPreference(useDynamicColor)
+        speakerPreferencesDataSource.setDynamicColorPreference(useDynamicColor)
     }
 
     override suspend fun setShouldHideOnboarding(shouldHideOnboarding: Boolean) {
-        niaPreferencesDataSource.setShouldHideOnboarding(shouldHideOnboarding)
+        speakerPreferencesDataSource.setShouldHideOnboarding(shouldHideOnboarding)
     }
 }

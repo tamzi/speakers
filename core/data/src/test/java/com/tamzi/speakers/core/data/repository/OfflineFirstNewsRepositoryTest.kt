@@ -31,7 +31,7 @@ import com.tamzi.speakers.core.database.model.NewsResourceTopicCrossRef
 import com.tamzi.speakers.core.database.model.PopulatedNewsResource
 import com.tamzi.speakers.core.database.model.TopicEntity
 import com.tamzi.speakers.core.database.model.asExternalModel
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 import com.tamzi.speakers.core.datastore.test.testUserPreferencesDataStore
 import com.tamzi.speakers.core.model.data.NewsResource
 import com.tamzi.speakers.core.model.data.Topic
@@ -55,7 +55,7 @@ class OfflineFirstNewsRepositoryTest {
 
     private lateinit var subject: OfflineFirstNewsRepository
 
-    private lateinit var niaPreferencesDataSource: NiaPreferencesDataSource
+    private lateinit var speakerPreferencesDataSource: SpeakerPreferencesDataSource
 
     private lateinit var newsResourceDao: TestNewsResourceDao
 
@@ -72,7 +72,7 @@ class OfflineFirstNewsRepositoryTest {
 
     @Before
     fun setup() {
-        niaPreferencesDataSource = NiaPreferencesDataSource(
+        speakerPreferencesDataSource = SpeakerPreferencesDataSource(
             tmpFolder.testUserPreferencesDataStore(testScope),
         )
         newsResourceDao = TestNewsResourceDao()
@@ -80,11 +80,11 @@ class OfflineFirstNewsRepositoryTest {
         network = TestNiaNetworkDataSource()
         notifier = TestNotifier()
         synchronizer = TestSynchronizer(
-            niaPreferencesDataSource,
+            speakerPreferencesDataSource,
         )
 
         subject = OfflineFirstNewsRepository(
-            niaPreferencesDataSource = niaPreferencesDataSource,
+            speakerPreferencesDataSource = speakerPreferencesDataSource,
             newsResourceDao = newsResourceDao,
             topicDao = topicDao,
             network = network,
@@ -137,7 +137,7 @@ class OfflineFirstNewsRepositoryTest {
     fun offlineFirstNewsRepository_sync_pulls_from_network() =
         testScope.runTest {
             // User has not onboarded
-            niaPreferencesDataSource.setShouldHideOnboarding(false)
+            speakerPreferencesDataSource.setShouldHideOnboarding(false)
             subject.syncWith(synchronizer)
 
             val newsResourcesFromNetwork = network.getNewsResources()
@@ -167,7 +167,7 @@ class OfflineFirstNewsRepositoryTest {
     fun offlineFirstNewsRepository_sync_deletes_items_marked_deleted_on_network() =
         testScope.runTest {
             // User has not onboarded
-            niaPreferencesDataSource.setShouldHideOnboarding(false)
+            speakerPreferencesDataSource.setShouldHideOnboarding(false)
 
             val newsResourcesFromNetwork = network.getNewsResources()
                 .map(NetworkNewsResource::asEntity)
@@ -214,7 +214,7 @@ class OfflineFirstNewsRepositoryTest {
     fun offlineFirstNewsRepository_incremental_sync_pulls_from_network() =
         testScope.runTest {
             // User has not onboarded
-            niaPreferencesDataSource.setShouldHideOnboarding(false)
+            speakerPreferencesDataSource.setShouldHideOnboarding(false)
 
             // Set news version to 7
             synchronizer.updateChangeListVersions {
@@ -292,7 +292,7 @@ class OfflineFirstNewsRepositoryTest {
     fun offlineFirstNewsRepository_sends_notifications_for_newly_synced_news_that_is_followed() =
         testScope.runTest {
             // User has onboarded
-            niaPreferencesDataSource.setShouldHideOnboarding(true)
+            speakerPreferencesDataSource.setShouldHideOnboarding(true)
 
             val networkNewsResources = network.getNewsResources()
 
@@ -308,7 +308,7 @@ class OfflineFirstNewsRepositoryTest {
                 .toSet()
 
             // Set followed topics
-            niaPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
+            speakerPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
 
             subject.syncWith(synchronizer)
 
@@ -329,7 +329,7 @@ class OfflineFirstNewsRepositoryTest {
     fun offlineFirstNewsRepository_does_not_send_notifications_for_existing_news_resources() =
         testScope.runTest {
             // User has onboarded
-            niaPreferencesDataSource.setShouldHideOnboarding(true)
+            speakerPreferencesDataSource.setShouldHideOnboarding(true)
 
             val networkNewsResources = network.getNewsResources()
                 .map(NetworkNewsResource::asEntity)
@@ -346,7 +346,7 @@ class OfflineFirstNewsRepositoryTest {
                 .toSet()
 
             // Follow all topics
-            niaPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
+            speakerPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
 
             subject.syncWith(synchronizer)
 

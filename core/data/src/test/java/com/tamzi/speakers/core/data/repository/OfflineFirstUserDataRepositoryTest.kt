@@ -17,7 +17,7 @@
 package com.tamzi.speakers.core.data.repository
 
 import com.tamzi.speakers.core.analytics.NoOpAnalyticsHelper
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 import com.tamzi.speakers.core.datastore.test.testUserPreferencesDataStore
 import com.tamzi.speakers.core.model.data.DarkThemeConfig
 import com.tamzi.speakers.core.model.data.ThemeBrand
@@ -41,7 +41,7 @@ class OfflineFirstUserDataRepositoryTest {
 
     private lateinit var subject: OfflineFirstUserDataRepository
 
-    private lateinit var niaPreferencesDataSource: NiaPreferencesDataSource
+    private lateinit var speakerPreferencesDataSource: SpeakerPreferencesDataSource
 
     private val analyticsHelper = NoOpAnalyticsHelper()
 
@@ -50,12 +50,12 @@ class OfflineFirstUserDataRepositoryTest {
 
     @Before
     fun setup() {
-        niaPreferencesDataSource = NiaPreferencesDataSource(
+        speakerPreferencesDataSource = SpeakerPreferencesDataSource(
             tmpFolder.testUserPreferencesDataStore(testScope),
         )
 
         subject = OfflineFirstUserDataRepository(
-            niaPreferencesDataSource = niaPreferencesDataSource,
+            speakerPreferencesDataSource = speakerPreferencesDataSource,
             analyticsHelper,
         )
     }
@@ -99,7 +99,7 @@ class OfflineFirstUserDataRepositoryTest {
             )
 
             assertEquals(
-                niaPreferencesDataSource.userData
+                speakerPreferencesDataSource.userData
                     .map { it.followedTopics }
                     .first(),
                 subject.userData
@@ -121,7 +121,7 @@ class OfflineFirstUserDataRepositoryTest {
             )
 
             assertEquals(
-                niaPreferencesDataSource.userData
+                speakerPreferencesDataSource.userData
                     .map { it.followedTopics }
                     .first(),
                 subject.userData
@@ -152,7 +152,7 @@ class OfflineFirstUserDataRepositoryTest {
             )
 
             assertEquals(
-                niaPreferencesDataSource.userData
+                speakerPreferencesDataSource.userData
                     .map { it.bookmarkedNewsResources }
                     .first(),
                 subject.userData
@@ -183,7 +183,7 @@ class OfflineFirstUserDataRepositoryTest {
             )
 
             assertEquals(
-                niaPreferencesDataSource.userData
+                speakerPreferencesDataSource.userData
                     .map { it.viewedNewsResources }
                     .first(),
                 subject.userData
@@ -205,7 +205,7 @@ class OfflineFirstUserDataRepositoryTest {
             )
             assertEquals(
                 ThemeBrand.ANDROID,
-                niaPreferencesDataSource
+                speakerPreferencesDataSource
                     .userData
                     .map { it.themeBrand }
                     .first(),
@@ -225,7 +225,7 @@ class OfflineFirstUserDataRepositoryTest {
             )
             assertEquals(
                 true,
-                niaPreferencesDataSource
+                speakerPreferencesDataSource
                     .userData
                     .map { it.useDynamicColor }
                     .first(),
@@ -245,7 +245,7 @@ class OfflineFirstUserDataRepositoryTest {
             )
             assertEquals(
                 DarkThemeConfig.DARK,
-                niaPreferencesDataSource
+                speakerPreferencesDataSource
                     .userData
                     .map { it.darkThemeConfig }
                     .first(),

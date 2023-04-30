@@ -18,13 +18,13 @@ package com.tamzi.speakers.core.data.repository
 
 import com.tamzi.speakers.core.data.Synchronizer
 import com.tamzi.speakers.core.datastore.ChangeListVersions
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 
 /**
- * Test synchronizer that delegates to [NiaPreferencesDataSource]
+ * Test synchronizer that delegates to [SpeakerPreferencesDataSource]
  */
 class TestSynchronizer(
-    private val niaPreferences: NiaPreferencesDataSource,
+    private val niaPreferences: SpeakerPreferencesDataSource,
 ) : Synchronizer {
     override suspend fun getChangeListVersions(): ChangeListVersions =
         niaPreferences.getChangeListVersions()

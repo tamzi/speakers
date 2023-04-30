@@ -18,7 +18,7 @@ package com.tamzi.speakers.core.data.repository
 
 import androidx.annotation.VisibleForTesting
 import com.tamzi.speakers.core.analytics.AnalyticsHelper
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 import com.tamzi.speakers.core.model.data.DarkThemeConfig
 import com.tamzi.speakers.core.model.data.ThemeBrand
 import com.tamzi.speakers.core.model.data.UserData
@@ -26,24 +26,24 @@ import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class OfflineFirstUserDataRepository @Inject constructor(
-    private val niaPreferencesDataSource: NiaPreferencesDataSource,
+    private val speakerPreferencesDataSource: SpeakerPreferencesDataSource,
     private val analyticsHelper: AnalyticsHelper,
 ) : UserDataRepository {
 
     override val userData: Flow<UserData> =
-        niaPreferencesDataSource.userData
+        speakerPreferencesDataSource.userData
 
     @VisibleForTesting
     override suspend fun setFollowedTopicIds(followedTopicIds: Set<String>) =
-        niaPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
+        speakerPreferencesDataSource.setFollowedTopicIds(followedTopicIds)
 
     override suspend fun toggleFollowedTopicId(followedTopicId: String, followed: Boolean) {
-        niaPreferencesDataSource.toggleFollowedTopicId(followedTopicId, followed)
+        speakerPreferencesDataSource.toggleFollowedTopicId(followedTopicId, followed)
         analyticsHelper.logTopicFollowToggled(followedTopicId, followed)
     }
 
     override suspend fun updateNewsResourceBookmark(newsResourceId: String, bookmarked: Boolean) {
-        niaPreferencesDataSource.toggleNewsResourceBookmark(newsResourceId, bookmarked)
+        speakerPreferencesDataSource.toggleNewsResourceBookmark(newsResourceId, bookmarked)
         analyticsHelper.logNewsResourceBookmarkToggled(
             newsResourceId = newsResourceId,
             isBookmarked = bookmarked,
@@ -51,25 +51,25 @@ class OfflineFirstUserDataRepository @Inject constructor(
     }
 
     override suspend fun setNewsResourceViewed(newsResourceId: String, viewed: Boolean) =
-        niaPreferencesDataSource.setNewsResourceViewed(newsResourceId, viewed)
+        speakerPreferencesDataSource.setNewsResourceViewed(newsResourceId, viewed)
 
     override suspend fun setThemeBrand(themeBrand: ThemeBrand) {
-        niaPreferencesDataSource.setThemeBrand(themeBrand)
+        speakerPreferencesDataSource.setThemeBrand(themeBrand)
         analyticsHelper.logThemeChanged(themeBrand.name)
     }
 
     override suspend fun setDarkThemeConfig(darkThemeConfig: DarkThemeConfig) {
-        niaPreferencesDataSource.setDarkThemeConfig(darkThemeConfig)
+        speakerPreferencesDataSource.setDarkThemeConfig(darkThemeConfig)
         analyticsHelper.logDarkThemeConfigChanged(darkThemeConfig.name)
     }
 
     override suspend fun setDynamicColorPreference(useDynamicColor: Boolean) {
-        niaPreferencesDataSource.setDynamicColorPreference(useDynamicColor)
+        speakerPreferencesDataSource.setDynamicColorPreference(useDynamicColor)
         analyticsHelper.logDynamicColorPreferenceChanged(useDynamicColor)
     }
 
     override suspend fun setShouldHideOnboarding(shouldHideOnboarding: Boolean) {
-        niaPreferencesDataSource.setShouldHideOnboarding(shouldHideOnboarding)
+        speakerPreferencesDataSource.setShouldHideOnboarding(shouldHideOnboarding)
         analyticsHelper.logOnboardingStateChanged(shouldHideOnboarding)
     }
 }

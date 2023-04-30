@@ -17,8 +17,6 @@
 package com.tamzi.speakers.core.datastore
 
 import com.tamzi.speakers.core.datastore.test.testUserPreferencesDataStore
-import com.tamzi.speakers.core.datastore.test.testUserPreferencesDataStore
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
@@ -30,18 +28,18 @@ import org.junit.rules.TemporaryFolder
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-class NiaPreferencesDataSourceTest {
+class SpeakerPreferencesDataSourceTest {
 
     private val testScope = TestScope(UnconfinedTestDispatcher())
 
-    private lateinit var subject: NiaPreferencesDataSource
+    private lateinit var subject: SpeakerPreferencesDataSource
 
     @get:Rule
     val tmpFolder: TemporaryFolder = TemporaryFolder.builder().assureDeletion().build()
 
     @Before
     fun setup() {
-        subject = NiaPreferencesDataSource(
+        subject = SpeakerPreferencesDataSource(
             tmpFolder.testUserPreferencesDataStore(testScope),
         )
     }

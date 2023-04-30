@@ -24,7 +24,7 @@ import com.tamzi.speakers.core.data.testdoubles.TestTopicDao
 import com.tamzi.speakers.core.database.dao.TopicDao
 import com.tamzi.speakers.core.database.model.TopicEntity
 import com.tamzi.speakers.core.database.model.asExternalModel
-import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.datastore.SpeakerPreferencesDataSource
 import com.tamzi.speakers.core.datastore.test.testUserPreferencesDataStore
 import com.tamzi.speakers.core.model.data.Topic
 import com.tamzi.speakers.core.network.model.NetworkTopic
@@ -48,7 +48,7 @@ class OfflineFirstTopicsRepositoryTest {
 
     private lateinit var network: TestNiaNetworkDataSource
 
-    private lateinit var niaPreferences: NiaPreferencesDataSource
+    private lateinit var niaPreferences: SpeakerPreferencesDataSource
 
     private lateinit var synchronizer: Synchronizer
 
@@ -59,7 +59,7 @@ class OfflineFirstTopicsRepositoryTest {
     fun setup() {
         topicDao = TestTopicDao()
         network = TestNiaNetworkDataSource()
-        niaPreferences = NiaPreferencesDataSource(
+        niaPreferences = SpeakerPreferencesDataSource(
             tmpFolder.testUserPreferencesDataStore(testScope),
         )
         synchronizer = TestSynchronizer(niaPreferences)
