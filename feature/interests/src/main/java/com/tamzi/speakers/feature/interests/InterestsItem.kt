@@ -35,10 +35,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.tamzi.speakers.core.savannah.component.DynamicAsyncImage
-import com.tamzi.speakers.core.savannah.component.NiaIconToggleButton
-import com.tamzi.speakers.core.savannah.icon.NiaIcons
-import com.tamzi.speakers.core.savannah.theme.NiaTheme
+import com.tamzi.speakers.core.stage.component.DynamicAsyncImage
+import com.tamzi.speakers.core.stage.component.NiaIconToggleButton
+import com.tamzi.speakers.core.stage.icon.NiaIcons
+import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.feature.interests.R.string
 
 @Composable

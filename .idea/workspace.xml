@@ -10,134 +10,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96937b26-4a19-4b7a-831b-504a216bc32c" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/.idea/androidTestResultsUserPreferences.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/core/ui/speakers.core.ui.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/feature/settings/speakers.feature.settings.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/protoeditor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/feature/topic/speakers.feature.topic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/core/savannah/speakers.core.savannah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core/savannah/speakers.core.stage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/tamzi/samples/apps/niacatalog/NiaCatalogActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/tamzi/stagecatalog/NiaCatalogActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/tamzi/samples/apps/niacatalog/ui/Catalog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/tamzi/stagecatalog/ui/Catalog.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data-test/src/main/java/com/tamzi/samples/apps/speakers/core/data/test/AlwaysOnlineNetworkMonitor.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data-test/src/main/java/com/tamzi/samples/apps/speakers/core/data/test/TestDataModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/di/DataModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/di/DataModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/di/UserNewsResourceRepositoryModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/di/UserNewsResourceRepositoryModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/model/NewsResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/model/NewsResource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/model/RecentSearchQuery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/model/RecentSearchQuery.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/model/Topic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/model/Topic.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/AnalyticsExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/AnalyticsExtensions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/CompositeUserNewsResourceRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/CompositeUserNewsResourceRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/DefaultRecentSearchRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/DefaultRecentSearchRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/DefaultSearchContentsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/DefaultSearchContentsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/NewsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/NewsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeNewsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeNewsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeRecentSearchRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeRecentSearchRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeSearchContentsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeSearchContentsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeTopicsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeTopicsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeUserDataRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeUserDataRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/CompositeUserNewsResourceRepositoryTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/UserNewsResourceTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/model/NetworkEntityKtTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/repository/OfflineFirstNewsRepositoryTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/repository/OfflineFirstTopicsRepositoryTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/repository/OfflineFirstUserDataRepositoryTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/repository/TestSynchronizer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/testdoubles/TestNewsResourceDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/testdoubles/TestNiaNetworkDataSource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/data/testdoubles/TestTopicDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/database/model/PopulatedNewsResourceKtTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/samples/apps/speakers/core/database/util/NewsResourceTypeConverterTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/12.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/schemas/com.google.samples.apps.nowinandroid.core.database.NiaDatabase/9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/androidTest/java/com/tamzi/samples/apps/speakers/core/database/dao/NewsResourceDaoTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/DaosModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/DatabaseMigrations.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/DatabaseModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/NiaDatabase.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/dao/NewsResourceDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/dao/NewsResourceFtsDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/dao/RecentSearchQueryDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/dao/TopicDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/dao/TopicFtsDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/model/NewsResourceEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/model/NewsResourceFtsEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/model/NewsResourceTopicCrossRef.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/model/PopulatedNewsResource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/model/RecentSearchQueryEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/model/TopicEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/model/TopicFtsEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/database/src/main/java/com/tamzi/samples/apps/speakers/core/database/util/Converters.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore-test/src/main/java/com/tamzi/samples/apps/speakers/core/datastore/test/TestDataStoreModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/samples/apps/speakers/core/datastore/ChangeListVersions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/samples/apps/speakers/core/datastore/IntToStringIdsMigration.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/samples/apps/speakers/core/datastore/ListToMapMigration.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/samples/apps/speakers/core/datastore/NiaPreferencesDataSource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/samples/apps/speakers/core/datastore/UserPreferencesSerializer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/samples/apps/speakers/core/datastore/di/DataStoreModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/proto/com/google/samples/apps/nowinandroid/data/dark_theme_config.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/proto/com/google/samples/apps/nowinandroid/data/theme_brand.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/proto/com/google/samples/apps/nowinandroid/data/user_preferences.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/test/java/com/tamzi/samples/apps/speakers/core/datastore/IntToStringIdsMigrationTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/test/java/com/tamzi/samples/apps/speakers/core/datastore/ListToMapMigrationTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/test/java/com/tamzi/samples/apps/speakers/core/datastore/NiaPreferencesDataSourceTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/test/java/com/tamzi/samples/apps/speakers/core/datastore/UserPreferencesSerializerTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/network/src/main/java/com/tamzi/speakers/core/network/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/network/src/main/java/com/tamzi/speakers/core/network/di/NetworkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/androidTest/java/com/tamzi/samples/apps/speakers/core/designsystem/ThemeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/androidTest/java/com/tamzi/samples/apps/speakers/core/designsystem/ThemeTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/Background.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Background.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/Button.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Button.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/Chip.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Chip.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/DynamicAsyncImage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/DynamicAsyncImage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/IconButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/IconButton.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/LoadingWheel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/LoadingWheel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/Navigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Navigation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/Tabs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Tabs.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/Tag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Tag.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/TopAppBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/TopAppBar.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/component/ViewToggle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/ViewToggle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/icon/NiaIcons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/icon/NiaIcons.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/theme/Background.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Background.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/theme/Color.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Color.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/theme/Gradient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Gradient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/theme/Theme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Theme.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/theme/Tint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Tint.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/java/com/tamzi/speakers/core/savannah/theme/Type.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Type.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_bookmark.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_bookmark.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_bookmark_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_bookmark_border.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_bookmarks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_bookmarks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_bookmarks_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_bookmarks_border.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_menu_book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_menu_book.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_menu_book_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_menu_book_border.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_placeholder_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_placeholder_default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_upcoming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_upcoming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/savannah/src/main/res/drawable/ic_upcoming_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/res/drawable/ic_upcoming_border.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/ui/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/ui/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/MainActivityViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivityViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/NiaApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/NiaApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/di/JankStatsModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/di/JankStatsModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/navigation/NiaNavHost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/navigation/NiaNavHost.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/navigation/TopLevelDestination.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/navigation/TopLevelDestination.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/ui/NiaApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/NiaApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/tamzi/speakers/ui/NiaAppState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/NiaAppState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/kotlin/AndroidFeatureConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/kotlin/AndroidFeatureConventionPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/src/main/java/com/tamzi/stagecatalog/ui/Catalog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/src/main/java/com/tamzi/stagecatalog/ui/Catalog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Background.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Background.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Button.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Button.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Chip.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Chip.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/DynamicAsyncImage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/DynamicAsyncImage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/IconButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/IconButton.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/LoadingWheel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/LoadingWheel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Navigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Navigation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Tabs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Tabs.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/Tag.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Tag.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/TopAppBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/TopAppBar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/component/ViewToggle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/ViewToggle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/icon/NiaIcons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/icon/NiaIcons.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Background.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/theme/Background.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Color.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/theme/Color.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Gradient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/theme/Gradient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Theme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/theme/Theme.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Tint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/theme/Tint.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/savannah/theme/Type.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/theme/Type.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ui/src/main/java/com/tamzi/speakers/core/ui/NewsFeed.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/ui/src/main/java/com/tamzi/speakers/core/ui/NewsFeed.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ui/src/main/java/com/tamzi/speakers/core/ui/NewsResourceCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/ui/src/main/java/com/tamzi/speakers/core/ui/NewsResourceCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/bookmarks/src/main/java/com/tamzi/speakers/feature/bookmarks/BookmarksScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/bookmarks/src/main/java/com/tamzi/speakers/feature/bookmarks/BookmarksScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/foryou/src/main/java/com/tamzi/speakers/feature/foryou/ForYouScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/foryou/src/main/java/com/tamzi/speakers/feature/foryou/ForYouScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/search/src/main/java/com/tamzi/speakers/feature/search/SearchScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/search/src/main/java/com/tamzi/speakers/feature/search/SearchScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/settings/src/main/java/com/tamzi/speakers/feature/settings/SettingsDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/settings/src/main/java/com/tamzi/speakers/feature/settings/SettingsDialog.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/initializers/SyncInitializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/initializers/SyncInitializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/initializers/SyncWorkHelpers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/initializers/SyncWorkHelpers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/services/SyncNotificationsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/services/SyncNotificationsService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/status/WorkManagerSyncManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/status/WorkManagerSyncManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/workers/AnalyticsExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/workers/AnalyticsExtensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/TopicScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/TopicScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/navigation/TopicNavigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/navigation/TopicNavigation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lint/src/main/java/com/tamzi/speakers/lint/designsystem/DesignSystemDetector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lint/src/main/java/com/tamzi/speakers/lint/designsystem/DesignSystemDetector.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,10 +109,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "android.gradle.sync.needed": "true",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
-    "last_opened_file_path": "/Users/franktamre/Documents/code/niamods/speakers/benchmarks",
+    "last_opened_file_path": "/Users/franktamre/Documents/code/niamods/speakers",
     "memory.settings.postsync.last.time.stamp": "1681481167898",
     "project.structure.last.edited": "Suggestions",
     "project.structure.proportion": "0.17",
@@ -210,6 +125,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/build-logic/convention" />
+      <recent name="$PROJECT_DIR$/build-logic" />
       <recent name="$PROJECT_DIR$/benchmarks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

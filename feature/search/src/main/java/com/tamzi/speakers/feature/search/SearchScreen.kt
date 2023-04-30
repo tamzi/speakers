@@ -75,8 +75,8 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.tamzi.speakers.core.savannah.icon.NiaIcons
-import com.tamzi.speakers.core.savannah.theme.NiaTheme
+import com.tamzi.speakers.core.stage.icon.NiaIcons
+import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.core.model.data.FollowableTopic
 import com.tamzi.speakers.core.model.data.UserNewsResource
 import com.tamzi.speakers.core.ui.DevicePreviews

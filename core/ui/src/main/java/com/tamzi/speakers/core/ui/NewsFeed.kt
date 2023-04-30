@@ -40,7 +40,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import com.tamzi.speakers.core.analytics.LocalAnalyticsHelper
-import com.tamzi.speakers.core.savannah.theme.NiaTheme
+import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.core.model.data.UserNewsResource
 import com.tamzi.speakers.core.ui.NewsFeedUiState.Loading
 import com.tamzi.speakers.core.ui.NewsFeedUiState.Success

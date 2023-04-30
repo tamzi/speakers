@@ -51,8 +51,8 @@ import androidx.compose.ui.window.DialogProperties
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.tamzi.speakers.core.savannah.theme.NiaTheme
-import com.tamzi.speakers.core.savannah.theme.supportsDynamicTheming
+import com.tamzi.speakers.core.stage.theme.NiaTheme
+import com.tamzi.speakers.core.stage.theme.supportsDynamicTheming
 import com.tamzi.speakers.core.model.data.DarkThemeConfig
 import com.tamzi.speakers.core.model.data.DarkThemeConfig.DARK
 import com.tamzi.speakers.core.model.data.DarkThemeConfig.FOLLOW_SYSTEM

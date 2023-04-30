@@ -64,9 +64,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.tamzi.speakers.core.savannah.component.NiaLoadingWheel
-import com.tamzi.speakers.core.savannah.theme.LocalTintTheme
-import com.tamzi.speakers.core.savannah.theme.NiaTheme
+import com.tamzi.speakers.core.stage.component.NiaLoadingWheel
+import com.tamzi.speakers.core.stage.theme.LocalTintTheme
+import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.core.model.data.UserNewsResource
 import com.tamzi.speakers.core.ui.NewsFeedUiState
 import com.tamzi.speakers.core.ui.NewsFeedUiState.Loading

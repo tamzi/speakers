@@ -45,12 +45,12 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.tamzi.speakers.core.savannah.component.DynamicAsyncImage
-import com.tamzi.speakers.core.savannah.component.NiaBackground
-import com.tamzi.speakers.core.savannah.component.NiaFilterChip
-import com.tamzi.speakers.core.savannah.component.NiaLoadingWheel
-import com.tamzi.speakers.core.savannah.icon.NiaIcons
-import com.tamzi.speakers.core.savannah.theme.NiaTheme
+import com.tamzi.speakers.core.stage.component.DynamicAsyncImage
+import com.tamzi.speakers.core.stage.component.NiaBackground
+import com.tamzi.speakers.core.stage.component.NiaFilterChip
+import com.tamzi.speakers.core.stage.component.NiaLoadingWheel
+import com.tamzi.speakers.core.stage.icon.NiaIcons
+import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.core.model.data.FollowableTopic
 import com.tamzi.speakers.core.model.data.UserNewsResource
 import com.tamzi.speakers.core.ui.DevicePreviews
@@ -60,9 +60,6 @@ import com.tamzi.speakers.core.ui.UserNewsResourcePreviewParameterProvider
 import com.tamzi.speakers.core.ui.userNewsResourceCardItems
 import com.tamzi.speakers.feature.topic.R.string
 import com.tamzi.speakers.feature.topic.TopicUiState.Loading
-import com.tamzi.speakers.feature.topic.NewsUiState.Loading
-import com.tamzi.speakers.feature.topic.TopicUiState.Error
-import com.tamzi.speakers.feature.topic.TopicUiState.Success
 
 @Composable
 internal fun TopicRoute(
@@ -117,8 +114,8 @@ internal fun TopicScreen(
                 )
             }
 
-            Error -> TODO()
-            is Success -> {
+            TopicUiState.Error -> TODO()
+            is TopicUiState.Success -> {
                 item {
                     TopicToolbar(
                         onBackClick = onBackClick,
@@ -202,7 +199,7 @@ private fun LazyListScope.userNewsResourceCards(
             )
         }
 
-        is Loading -> item {
+        is NewsUiState.Loading -> item {
             NiaLoadingWheel(contentDesc = "Loading news") // TODO
         }
 
@@ -276,7 +273,7 @@ fun TopicScreenPopulated(
     NiaTheme {
         NiaBackground {
             TopicScreen(
-                topicUiState = Success(userNewsResources[0].followableTopics[0]),
+                topicUiState = TopicUiState.Success(userNewsResources[0].followableTopics[0]),
                 newsUiState = NewsUiState.Success(userNewsResources),
                 onBackClick = {},
                 onFollowClick = {},
@@ -295,7 +292,7 @@ fun TopicScreenLoading() {
         NiaBackground {
             TopicScreen(
                 topicUiState = TopicUiState.Loading,
-                newsUiState = Loading,
+                newsUiState = NewsUiState.Loading,
                 onBackClick = {},
                 onFollowClick = {},
                 onBookmarkChanged = { _, _ -> },

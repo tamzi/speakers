@@ -24,8 +24,8 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.google.samples.apps.nowinandroid.core.decoder.StringDecoder
-import com.google.samples.apps.nowinandroid.feature.topic.TopicRoute
+import com.tamzi.speakers.core.decoder.StringDecoder
+import com.tamzi.speakers.feature.topic.TopicRoute
 
 @VisibleForTesting
 internal const val topicIdArg = "topicId"

@@ -58,10 +58,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.tamzi.speakers.core.savannah.component.NiaIconToggleButton
-import com.tamzi.speakers.core.savannah.component.NiaTopicTag
-import com.tamzi.speakers.core.savannah.icon.NiaIcons
-import com.tamzi.speakers.core.savannah.theme.NiaTheme
+import com.tamzi.speakers.core.stage.component.NiaIconToggleButton
+import com.tamzi.speakers.core.stage.component.NiaTopicTag
+import com.tamzi.speakers.core.stage.icon.NiaIcons
+import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.core.model.data.FollowableTopic
 import com.tamzi.speakers.core.model.data.NewsResource
 import com.tamzi.speakers.core.model.data.NewsResourceType
@@ -71,7 +71,7 @@ import kotlinx.datetime.toJavaInstant
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
-import com.tamzi.speakers.core.savannah.R as DesignsystemR
+import com.tamzi.speakers.core.stage.R as DesignsystemR
 
 /**
  * [NewsResource] card used on the following screens: For You, Saved
