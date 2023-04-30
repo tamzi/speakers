@@ -16,8 +16,8 @@
 
 package com.tamzi.speakers.core.data.repository
 
-import com.google.samples.apps.nowinandroid.core.data.Syncable
-import com.google.samples.apps.nowinandroid.core.model.data.NewsResource
+import com.tamzi.speakers.core.data.Syncable
+import com.tamzi.speakers.core.model.data.NewsResource
 import kotlinx.coroutines.flow.Flow
 
 /**

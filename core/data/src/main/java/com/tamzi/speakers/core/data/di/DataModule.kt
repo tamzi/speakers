@@ -16,18 +16,18 @@
 
 package com.tamzi.speakers.core.data.di
 
-import com.google.samples.apps.nowinandroid.core.data.repository.DefaultRecentSearchRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.DefaultSearchContentsRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.NewsRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.OfflineFirstNewsRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.OfflineFirstTopicsRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.OfflineFirstUserDataRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.RecentSearchRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.SearchContentsRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.TopicsRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.UserDataRepository
-import com.google.samples.apps.nowinandroid.core.data.util.ConnectivityManagerNetworkMonitor
-import com.google.samples.apps.nowinandroid.core.data.util.NetworkMonitor
+import com.tamzi.speakers.core.data.repository.DefaultRecentSearchRepository
+import com.tamzi.speakers.core.data.repository.DefaultSearchContentsRepository
+import com.tamzi.speakers.core.data.repository.NewsRepository
+import com.tamzi.speakers.core.data.repository.OfflineFirstNewsRepository
+import com.tamzi.speakers.core.data.repository.OfflineFirstTopicsRepository
+import com.tamzi.speakers.core.data.repository.OfflineFirstUserDataRepository
+import com.tamzi.speakers.core.data.repository.RecentSearchRepository
+import com.tamzi.speakers.core.data.repository.SearchContentsRepository
+import com.tamzi.speakers.core.data.repository.TopicsRepository
+import com.tamzi.speakers.core.data.repository.UserDataRepository
+import com.tamzi.speakers.core.data.util.ConnectivityManagerNetworkMonitor
+import com.tamzi.speakers.core.data.util.NetworkMonitor
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

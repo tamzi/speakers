@@ -16,8 +16,8 @@
 
 package com.tamzi.speakers.core.data.di
 
-import com.google.samples.apps.nowinandroid.core.data.repository.CompositeUserNewsResourceRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.UserNewsResourceRepository
+import com.tamzi.speakers.core.data.repository.CompositeUserNewsResourceRepository
+import com.tamzi.speakers.core.data.repository.UserNewsResourceRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

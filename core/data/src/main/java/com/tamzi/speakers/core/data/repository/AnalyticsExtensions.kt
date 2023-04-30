@@ -16,9 +16,9 @@
 
 package com.tamzi.speakers.core.data.repository
 
-import com.google.samples.apps.nowinandroid.core.analytics.AnalyticsEvent
-import com.google.samples.apps.nowinandroid.core.analytics.AnalyticsEvent.Param
-import com.google.samples.apps.nowinandroid.core.analytics.AnalyticsHelper
+import com.tamzi.speakers.core.analytics.AnalyticsEvent
+import com.tamzi.speakers.core.analytics.AnalyticsEvent.Param
+import com.tamzi.speakers.core.analytics.AnalyticsHelper
 
 fun AnalyticsHelper.logNewsResourceBookmarkToggled(newsResourceId: String, isBookmarked: Boolean) {
     val eventType = if (isBookmarked) "news_resource_saved" else "news_resource_unsaved"

@@ -38,7 +38,7 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "com.tamzi.catalog"
+        applicationId = "com.tamzi.stagecatalog"
         versionCode = 1
         versionName = "0.0.1" // X.Y.Z; X = Major, Y = minor, Z = Patch level
 
@@ -65,7 +65,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:savannah"))
+    implementation(project(":core:stage"))
     implementation(project(":core:ui"))
     implementation(libs.androidx.activity.compose)
 }

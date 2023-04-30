@@ -18,8 +18,8 @@ package com.tamzi.speakers.sync.services
 
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import com.google.samples.apps.nowinandroid.core.data.util.SyncManager
-import com.google.samples.apps.nowinandroid.sync.initializers.SYNC_TOPIC
+import com.tamzi.speakers.core.data.util.SyncManager
+import com.tamzi.speakers.sync.initializers.SYNC_TOPIC
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

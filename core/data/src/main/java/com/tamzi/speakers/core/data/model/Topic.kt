@@ -16,8 +16,8 @@
 
 package com.tamzi.speakers.core.data.model
 
-import com.google.samples.apps.nowinandroid.core.database.model.TopicEntity
-import com.google.samples.apps.nowinandroid.core.network.model.NetworkTopic
+import com.tamzi.speakers.core.database.model.TopicEntity
+import com.tamzi.speakers.core.network.model.NetworkTopic
 
 fun NetworkTopic.asEntity() = TopicEntity(
     id = id,

@@ -19,7 +19,7 @@ package com.tamzi.speakers.sync.initializers
 import android.content.Context
 import androidx.work.ExistingWorkPolicy
 import androidx.work.WorkManager
-import com.google.samples.apps.nowinandroid.sync.workers.SyncWorker
+import com.tamzi.speakers.sync.workers.SyncWorker
 
 object Sync {
     // This method is initializes sync, the process that keeps the app's data current.

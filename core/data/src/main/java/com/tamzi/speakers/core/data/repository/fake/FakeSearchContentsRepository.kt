@@ -16,8 +16,8 @@
 
 package com.tamzi.speakers.core.data.repository.fake
 
-import com.google.samples.apps.nowinandroid.core.data.repository.SearchContentsRepository
-import com.google.samples.apps.nowinandroid.core.model.data.SearchResult
+import com.tamzi.speakers.core.data.repository.SearchContentsRepository
+import com.tamzi.speakers.core.model.data.SearchResult
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import javax.inject.Inject

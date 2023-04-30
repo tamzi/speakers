@@ -16,12 +16,12 @@
 
 package com.tamzi.speakers.core.data.repository.fake
 
-import com.google.samples.apps.nowinandroid.core.data.Synchronizer
-import com.google.samples.apps.nowinandroid.core.data.repository.TopicsRepository
-import com.google.samples.apps.nowinandroid.core.model.data.Topic
-import com.google.samples.apps.nowinandroid.core.network.Dispatcher
-import com.google.samples.apps.nowinandroid.core.network.NiaDispatchers.IO
-import com.google.samples.apps.nowinandroid.core.network.fake.FakeNiaNetworkDataSource
+import com.tamzi.speakers.core.data.Synchronizer
+import com.tamzi.speakers.core.data.repository.TopicsRepository
+import com.tamzi.speakers.core.model.data.Topic
+import com.tamzi.speakers.core.network.Dispatcher
+import com.tamzi.speakers.core.network.NiaDispatchers.IO
+import com.tamzi.speakers.core.network.fake.FakeNiaNetworkDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

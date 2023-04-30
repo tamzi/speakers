@@ -16,8 +16,8 @@
 
 package com.tamzi.speakers.sync.workers
 
-import com.google.samples.apps.nowinandroid.core.analytics.AnalyticsEvent
-import com.google.samples.apps.nowinandroid.core.analytics.AnalyticsHelper
+import com.tamzi.speakers.core.analytics.AnalyticsEvent
+import com.tamzi.speakers.core.analytics.AnalyticsHelper
 
 fun AnalyticsHelper.logSyncStarted() =
     logEvent(

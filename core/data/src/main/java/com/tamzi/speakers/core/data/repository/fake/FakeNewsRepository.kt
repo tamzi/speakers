@@ -16,17 +16,17 @@
 
 package com.tamzi.speakers.core.data.repository.fake
 
-import com.google.samples.apps.nowinandroid.core.data.Synchronizer
-import com.google.samples.apps.nowinandroid.core.data.model.asEntity
-import com.google.samples.apps.nowinandroid.core.data.repository.NewsRepository
-import com.google.samples.apps.nowinandroid.core.data.repository.NewsResourceQuery
-import com.google.samples.apps.nowinandroid.core.database.model.NewsResourceEntity
-import com.google.samples.apps.nowinandroid.core.database.model.asExternalModel
-import com.google.samples.apps.nowinandroid.core.model.data.NewsResource
-import com.google.samples.apps.nowinandroid.core.network.Dispatcher
-import com.google.samples.apps.nowinandroid.core.network.NiaDispatchers.IO
-import com.google.samples.apps.nowinandroid.core.network.fake.FakeNiaNetworkDataSource
-import com.google.samples.apps.nowinandroid.core.network.model.NetworkNewsResource
+import com.tamzi.speakers.core.data.Synchronizer
+import com.tamzi.speakers.core.data.model.asEntity
+import com.tamzi.speakers.core.data.repository.NewsRepository
+import com.tamzi.speakers.core.data.repository.NewsResourceQuery
+import com.tamzi.speakers.core.database.model.NewsResourceEntity
+import com.tamzi.speakers.core.database.model.asExternalModel
+import com.tamzi.speakers.core.model.data.NewsResource
+import com.tamzi.speakers.core.network.Dispatcher
+import com.tamzi.speakers.core.network.NiaDispatchers.IO
+import com.tamzi.speakers.core.network.fake.FakeNiaNetworkDataSource
+import com.tamzi.speakers.core.network.model.NetworkNewsResource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

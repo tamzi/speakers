@@ -16,15 +16,15 @@
 
 package com.tamzi.speakers.core.data.repository
 
-import com.google.samples.apps.nowinandroid.core.database.dao.NewsResourceDao
-import com.google.samples.apps.nowinandroid.core.database.dao.NewsResourceFtsDao
-import com.google.samples.apps.nowinandroid.core.database.dao.TopicDao
-import com.google.samples.apps.nowinandroid.core.database.dao.TopicFtsDao
-import com.google.samples.apps.nowinandroid.core.database.model.asExternalModel
-import com.google.samples.apps.nowinandroid.core.database.model.asFtsEntity
-import com.google.samples.apps.nowinandroid.core.model.data.SearchResult
-import com.google.samples.apps.nowinandroid.core.network.Dispatcher
-import com.google.samples.apps.nowinandroid.core.network.NiaDispatchers.IO
+import com.tamzi.speakers.core.database.dao.NewsResourceDao
+import com.tamzi.speakers.core.database.dao.NewsResourceFtsDao
+import com.tamzi.speakers.core.database.dao.TopicDao
+import com.tamzi.speakers.core.database.dao.TopicFtsDao
+import com.tamzi.speakers.core.database.model.asExternalModel
+import com.tamzi.speakers.core.database.model.asFtsEntity
+import com.tamzi.speakers.core.model.data.SearchResult
+import com.tamzi.speakers.core.network.Dispatcher
+import com.tamzi.speakers.core.network.NiaDispatchers.IO
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine

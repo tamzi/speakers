@@ -16,8 +16,8 @@
 
 package com.tamzi.speakers.core.data.repository
 
-import com.google.samples.apps.nowinandroid.core.model.data.UserNewsResource
-import com.google.samples.apps.nowinandroid.core.model.data.mapToUserNewsResources
+import com.tamzi.speakers.core.model.data.UserNewsResource
+import com.tamzi.speakers.core.model.data.mapToUserNewsResources
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged

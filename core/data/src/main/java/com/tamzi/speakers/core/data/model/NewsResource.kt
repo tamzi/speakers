@@ -16,11 +16,11 @@
 
 package com.tamzi.speakers.core.data.model
 
-import com.google.samples.apps.nowinandroid.core.database.model.NewsResourceEntity
-import com.google.samples.apps.nowinandroid.core.database.model.NewsResourceTopicCrossRef
-import com.google.samples.apps.nowinandroid.core.database.model.TopicEntity
-import com.google.samples.apps.nowinandroid.core.network.model.NetworkNewsResource
-import com.google.samples.apps.nowinandroid.core.network.model.NetworkNewsResourceExpanded
+import com.tamzi.speakers.core.database.model.NewsResourceEntity
+import com.tamzi.speakers.core.database.model.NewsResourceTopicCrossRef
+import com.tamzi.speakers.core.database.model.TopicEntity
+import com.tamzi.speakers.core.network.model.NetworkNewsResource
+import com.tamzi.speakers.core.network.model.NetworkNewsResourceExpanded
 
 fun NetworkNewsResource.asEntity() = NewsResourceEntity(
     id = id,

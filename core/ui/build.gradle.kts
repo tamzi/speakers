@@ -41,7 +41,7 @@ dependencies {
     debugApi(libs.androidx.compose.ui.tooling)
 
     implementation(project(":core:analytics"))
-    implementation(project(":core:savannah"))
+    implementation(project(":core:stage"))
     implementation(project(":core:domain"))
     implementation(project(":core:model"))
     implementation(libs.androidx.browser)

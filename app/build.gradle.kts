@@ -88,7 +88,7 @@ dependencies {
 
     implementation(project(":core:common"))
     implementation(project(":core:ui"))
-    implementation(project(":core:savannah"))
+    implementation(project(":core:stage"))
     implementation(project(":core:data"))
     implementation(project(":core:model"))
     implementation(project(":core:analytics"))

@@ -16,11 +16,11 @@
 
 package com.tamzi.speakers.core.data.repository.fake
 
-import com.google.samples.apps.nowinandroid.core.data.repository.UserDataRepository
-import com.google.samples.apps.nowinandroid.core.datastore.NiaPreferencesDataSource
-import com.google.samples.apps.nowinandroid.core.model.data.DarkThemeConfig
-import com.google.samples.apps.nowinandroid.core.model.data.ThemeBrand
-import com.google.samples.apps.nowinandroid.core.model.data.UserData
+import com.tamzi.speakers.core.data.repository.UserDataRepository
+import com.tamzi.speakers.core.datastore.NiaPreferencesDataSource
+import com.tamzi.speakers.core.model.data.DarkThemeConfig
+import com.tamzi.speakers.core.model.data.ThemeBrand
+import com.tamzi.speakers.core.model.data.UserData
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

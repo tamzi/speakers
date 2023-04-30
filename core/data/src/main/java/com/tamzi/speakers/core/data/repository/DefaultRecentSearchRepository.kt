@@ -16,12 +16,12 @@
 
 package com.tamzi.speakers.core.data.repository
 
-import com.google.samples.apps.nowinandroid.core.data.model.RecentSearchQuery
-import com.google.samples.apps.nowinandroid.core.data.model.asExternalModel
-import com.google.samples.apps.nowinandroid.core.database.dao.RecentSearchQueryDao
-import com.google.samples.apps.nowinandroid.core.database.model.RecentSearchQueryEntity
-import com.google.samples.apps.nowinandroid.core.network.Dispatcher
-import com.google.samples.apps.nowinandroid.core.network.NiaDispatchers.IO
+import com.tamzi.speakers.core.data.model.RecentSearchQuery
+import com.tamzi.speakers.core.data.model.asExternalModel
+import com.tamzi.speakers.core.database.dao.RecentSearchQueryDao
+import com.tamzi.speakers.core.database.model.RecentSearchQueryEntity
+import com.tamzi.speakers.core.network.Dispatcher
+import com.tamzi.speakers.core.network.NiaDispatchers.IO
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

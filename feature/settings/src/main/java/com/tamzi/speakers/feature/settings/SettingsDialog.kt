@@ -61,7 +61,6 @@ import com.tamzi.speakers.core.model.data.ThemeBrand
 import com.tamzi.speakers.core.model.data.ThemeBrand.ANDROID
 import com.tamzi.speakers.core.model.data.ThemeBrand.DEFAULT
 import com.tamzi.speakers.core.ui.TrackScreenViewEvent
-import com.tamzi.speakers.feature.settings.R.string
 import com.tamzi.speakers.feature.settings.SettingsUiState.Loading
 import com.tamzi.speakers.feature.settings.SettingsUiState.Success
 import com.tamzi.speakers.feature.settings.R.string

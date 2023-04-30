@@ -83,7 +83,7 @@ object NetworkModule {
         // but some problematic images are fetching each time
         .respectCacheHeaders(false)
         .apply {
-            if (com.tamzi.samples.apps.speakers.core.network.BuildConfig.DEBUG) {
+            if (BuildConfig.DEBUG) {
                 logger(DebugLogger())
             }
         }
