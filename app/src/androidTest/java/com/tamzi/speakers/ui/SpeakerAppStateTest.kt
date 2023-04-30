@@ -30,7 +30,7 @@ import androidx.navigation.compose.ComposeNavigator
 import androidx.navigation.compose.composable
 import androidx.navigation.createGraph
 import androidx.navigation.testing.TestNavHostController
-import com.tamzi.speakers.ui.NiaAppState
+import com.tamzi.speakers.ui.SpeakerAppState
 import com.tamzi.speakers.ui.rememberNiaAppState
 import com.tamzi.speakers.core.data.repository.CompositeUserNewsResourceRepository
 import com.tamzi.speakers.core.testing.repository.TestNewsRepository
@@ -47,13 +47,13 @@ import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 /**
- * Tests [NiaAppState].
+ * Tests [SpeakerAppState].
  *
  * Note: This could become an unit test if Robolectric is added to the project and the Context
  * is faked.
  */
 @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
-class NiaAppStateTest {
+class SpeakerAppStateTest {
 
     @get:Rule
     val composeTestRule = createComposeRule()
@@ -65,7 +65,7 @@ class NiaAppStateTest {
         CompositeUserNewsResourceRepository(TestNewsRepository(), TestUserDataRepository())
 
     // Subject under test.
-    private lateinit var state: NiaAppState
+    private lateinit var state: SpeakerAppState
 
     @Test
     fun niaAppState_currentDestination() = runTest {
@@ -74,7 +74,7 @@ class NiaAppStateTest {
         composeTestRule.setContent {
             val navController = rememberTestNavController()
             state = remember(navController) {
-                NiaAppState(
+                SpeakerAppState(
                     navController = navController,
                     coroutineScope = backgroundScope,
                     windowSizeClass = getCompactWindowClass(),
@@ -114,7 +114,7 @@ class NiaAppStateTest {
     @Test
     fun niaAppState_showBottomBar_compact() = runTest {
         composeTestRule.setContent {
-            state = NiaAppState(
+            state = SpeakerAppState(
                 navController = NavHostController(LocalContext.current),
                 coroutineScope = backgroundScope,
                 windowSizeClass = getCompactWindowClass(),
@@ -130,7 +130,7 @@ class NiaAppStateTest {
     @Test
     fun niaAppState_showNavRail_medium() = runTest {
         composeTestRule.setContent {
-            state = NiaAppState(
+            state = SpeakerAppState(
                 navController = NavHostController(LocalContext.current),
                 coroutineScope = backgroundScope,
                 windowSizeClass = WindowSizeClass.calculateFromSize(DpSize(800.dp, 800.dp)),
@@ -146,7 +146,7 @@ class NiaAppStateTest {
     @Test
     fun niaAppState_showNavRail_large() = runTest {
         composeTestRule.setContent {
-            state = NiaAppState(
+            state = SpeakerAppState(
                 navController = NavHostController(LocalContext.current),
                 coroutineScope = backgroundScope,
                 windowSizeClass = WindowSizeClass.calculateFromSize(DpSize(900.dp, 1200.dp)),
@@ -162,7 +162,7 @@ class NiaAppStateTest {
     @Test
     fun stateIsOfflineWhenNetworkMonitorIsOffline() = runTest(UnconfinedTestDispatcher()) {
         composeTestRule.setContent {
-            state = NiaAppState(
+            state = SpeakerAppState(
                 navController = NavHostController(LocalContext.current),
                 coroutineScope = backgroundScope,
                 windowSizeClass = WindowSizeClass.calculateFromSize(DpSize(900.dp, 1200.dp)),

@@ -46,7 +46,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.tamzi.speakers.core.stage.component.DynamicAsyncImage
-import com.tamzi.speakers.core.stage.component.NiaBackground
+import com.tamzi.speakers.core.stage.component.SpeakerBackground
 import com.tamzi.speakers.core.stage.component.NiaFilterChip
 import com.tamzi.speakers.core.stage.component.NiaLoadingWheel
 import com.tamzi.speakers.core.stage.icon.NiaIcons
@@ -271,7 +271,7 @@ fun TopicScreenPopulated(
     userNewsResources: List<UserNewsResource>,
 ) {
     NiaTheme {
-        NiaBackground {
+        SpeakerBackground {
             TopicScreen(
                 topicUiState = TopicUiState.Success(userNewsResources[0].followableTopics[0]),
                 newsUiState = NewsUiState.Success(userNewsResources),
@@ -289,7 +289,7 @@ fun TopicScreenPopulated(
 @Composable
 fun TopicScreenLoading() {
     NiaTheme {
-        NiaBackground {
+        SpeakerBackground {
             TopicScreen(
                 topicUiState = TopicUiState.Loading,
                 newsUiState = NewsUiState.Loading,

@@ -45,7 +45,7 @@ import com.tamzi.speakers.core.data.util.NetworkMonitor
 import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.core.model.data.DarkThemeConfig
 import com.tamzi.speakers.core.model.data.ThemeBrand
-import com.tamzi.speakers.ui.NiaApp
+import com.tamzi.speakers.ui.SpeakerApp
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.onEach
@@ -120,7 +120,7 @@ class MainActivity : ComponentActivity() {
                     androidTheme = shouldUseAndroidTheme(uiState),
                     disableDynamicTheming = shouldDisableDynamicTheming(uiState),
                 ) {
-                    NiaApp(
+                    SpeakerApp(
                         networkMonitor = networkMonitor,
                         windowSizeClass = calculateWindowSizeClass(this),
                         userNewsResourceRepository = userNewsResourceRepository,

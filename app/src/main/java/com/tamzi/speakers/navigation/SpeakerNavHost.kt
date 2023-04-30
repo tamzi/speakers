@@ -1,12 +1,12 @@
 /*
  * Copyright 2023 The Android Open Source Project
- *
+ *  
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
  *   You may obtain a copy of the License at
- *
+ *  
  *       https://www.apache.org/licenses/LICENSE-2.0
- *
+ *  
  *   Unless required by applicable law or agreed to in writing, software
  *   distributed under the License is distributed on an "AS IS" BASIS,
  *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -27,7 +27,7 @@ import com.tamzi.speakers.feature.search.navigation.searchScreen
 import com.tamzi.speakers.feature.topic.navigation.navigateToTopic
 import com.tamzi.speakers.feature.topic.navigation.topicScreen
 import com.tamzi.speakers.navigation.TopLevelDestination.INTERESTS
-import com.tamzi.speakers.ui.NiaAppState
+import com.tamzi.speakers.ui.SpeakerAppState
 
 /**
  * Top-level navigation graph. Navigation is organized as explained at
@@ -37,8 +37,8 @@ import com.tamzi.speakers.ui.NiaAppState
  * within each route is handled using state and Back Handlers.
  */
 @Composable
-fun NiaNavHost(
-    appState: NiaAppState,
+fun SpeakerNavHost(
+    appState: SpeakerAppState,
     modifier: Modifier = Modifier,
     startDestination: String = forYouNavigationRoute,
 ) {

@@ -26,7 +26,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.tamzi.speakers.core.stage.component.NiaBackground
+import com.tamzi.speakers.core.stage.component.SpeakerBackground
 import com.tamzi.speakers.core.stage.component.NiaLoadingWheel
 import com.tamzi.speakers.core.stage.theme.NiaTheme
 import com.tamzi.speakers.core.model.data.FollowableTopic
@@ -95,7 +95,7 @@ fun InterestsScreenPopulated(
     followableTopics: List<FollowableTopic>,
 ) {
     NiaTheme {
-        NiaBackground {
+        SpeakerBackground {
             InterestsScreen(
                 uiState = Interests(
                     topics = followableTopics,
@@ -111,7 +111,7 @@ fun InterestsScreenPopulated(
 @Composable
 fun InterestsScreenLoading() {
     NiaTheme {
-        NiaBackground {
+        SpeakerBackground {
             InterestsScreen(
                 uiState = Loading,
                 followTopic = { _, _ -> },
@@ -125,7 +125,7 @@ fun InterestsScreenLoading() {
 @Composable
 fun InterestsScreenEmpty() {
     NiaTheme {
-        NiaBackground {
+        SpeakerBackground {
             InterestsScreen(
                 uiState = Empty,
                 followTopic = { _, _ -> },

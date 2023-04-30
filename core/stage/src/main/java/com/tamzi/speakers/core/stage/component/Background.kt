@@ -48,7 +48,7 @@ import kotlin.math.tan
  * @param content The background content.
  */
 @Composable
-fun NiaBackground(
+fun SpeakerBackground(
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit,
 ) {
@@ -74,7 +74,7 @@ fun NiaBackground(
  * @param content The background content.
  */
 @Composable
-fun NiaGradientBackground(
+fun SpeakerGradientBackground(
     modifier: Modifier = Modifier,
     gradientColors: GradientColors = LocalGradientColors.current,
     content: @Composable () -> Unit,
@@ -151,7 +151,7 @@ annotation class ThemePreviews
 @Composable
 fun BackgroundDefault() {
     NiaTheme(disableDynamicTheming = true) {
-        NiaBackground(Modifier.size(100.dp), content = {})
+        SpeakerBackground(Modifier.size(100.dp), content = {})
     }
 }
 
@@ -159,7 +159,7 @@ fun BackgroundDefault() {
 @Composable
 fun BackgroundDynamic() {
     NiaTheme(disableDynamicTheming = false) {
-        NiaBackground(Modifier.size(100.dp), content = {})
+        SpeakerBackground(Modifier.size(100.dp), content = {})
     }
 }
 
@@ -167,7 +167,7 @@ fun BackgroundDynamic() {
 @Composable
 fun BackgroundAndroid() {
     NiaTheme(androidTheme = true) {
-        NiaBackground(Modifier.size(100.dp), content = {})
+        SpeakerBackground(Modifier.size(100.dp), content = {})
     }
 }
 
@@ -175,7 +175,7 @@ fun BackgroundAndroid() {
 @Composable
 fun GradientBackgroundDefault() {
     NiaTheme(disableDynamicTheming = true) {
-        NiaGradientBackground(Modifier.size(100.dp), content = {})
+        SpeakerGradientBackground(Modifier.size(100.dp), content = {})
     }
 }
 
@@ -183,7 +183,7 @@ fun GradientBackgroundDefault() {
 @Composable
 fun GradientBackgroundDynamic() {
     NiaTheme(disableDynamicTheming = false) {
-        NiaGradientBackground(Modifier.size(100.dp), content = {})
+        SpeakerGradientBackground(Modifier.size(100.dp), content = {})
     }
 }
 
@@ -191,6 +191,6 @@ fun GradientBackgroundDynamic() {
 @Composable
 fun GradientBackgroundAndroid() {
     NiaTheme(androidTheme = true) {
-        NiaGradientBackground(Modifier.size(100.dp), content = {})
+        SpeakerGradientBackground(Modifier.size(100.dp), content = {})
     }
 }

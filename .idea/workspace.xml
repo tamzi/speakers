@@ -10,21 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96937b26-4a19-4b7a-831b-504a216bc32c" name="Changes" comment="refactor">
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivityViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivityViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/NiaApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/SpeakerApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/NiaApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/NiaAppState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerAppState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/OfflineFirstNewsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/OfflineFirstNewsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/OfflineFirstUserDataRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/OfflineFirstUserDataRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeUserDataRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/tamzi/speakers/core/data/repository/fake/FakeUserDataRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/OfflineFirstNewsRepositoryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/OfflineFirstNewsRepositoryTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/OfflineFirstTopicsRepositoryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/OfflineFirstTopicsRepositoryTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/OfflineFirstUserDataRepositoryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/OfflineFirstUserDataRepositoryTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/TestSynchronizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/test/java/com/tamzi/speakers/core/data/repository/TestSynchronizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/speakers/core/datastore/NiaPreferencesDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/datastore/src/main/java/com/tamzi/speakers/core/datastore/SpeakerPreferencesDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/datastore/src/test/java/com/tamzi/speakers/core/datastore/NiaPreferencesDataSourceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/datastore/src/test/java/com/tamzi/speakers/core/datastore/SpeakerPreferencesDataSourceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/workers/SyncWorker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sync/work/src/main/java/com/tamzi/speakers/sync/workers/SyncWorker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/NavigationUiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/NavigationUiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/NiaAppStateTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/SpeakerAppStateTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/di/JankStatsModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/di/JankStatsModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/navigation/NiaNavHost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/navigation/SpeakerNavHost.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerAppState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerAppState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Background.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Background.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/TopicScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/TopicScreen.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +78,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
-    "last_opened_file_path": "/Users/franktamre/Documents/code/niamods/speakers",
+    "last_opened_file_path": "/Users/franktamre/Documents/code/niamods/speakers/.github/workflows",
     "memory.settings.postsync.last.time.stamp": "1681481167898",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.17",
@@ -96,6 +92,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/build-logic/convention" />
       <recent name="$PROJECT_DIR$/build-logic" />
@@ -314,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682888429939</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor">
+      <created>1682889073808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682889073808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

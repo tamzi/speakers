@@ -25,7 +25,6 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.testharness.TestHarness
-import com.tamzi.speakers.ui.NiaApp
 import com.tamzi.speakers.core.data.repository.CompositeUserNewsResourceRepository
 import com.tamzi.speakers.core.data.util.NetworkMonitor
 import com.tamzi.speakers.core.testing.repository.TestNewsRepository
@@ -85,7 +84,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(400.dp, 400.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -105,7 +104,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(610.dp, 400.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -125,7 +124,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(900.dp, 400.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -145,7 +144,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(400.dp, 500.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -165,7 +164,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(610.dp, 500.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -185,7 +184,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(900.dp, 500.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -205,7 +204,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(400.dp, 1000.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -225,7 +224,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(610.dp, 1000.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),
@@ -245,7 +244,7 @@ class NavigationUiTest {
         composeTestRule.setContent {
             TestHarness(size = DpSize(900.dp, 1000.dp)) {
                 BoxWithConstraints {
-                    NiaApp(
+                    SpeakerApp(
                         windowSizeClass = WindowSizeClass.calculateFromSize(
                             DpSize(maxWidth, maxHeight),
                         ),

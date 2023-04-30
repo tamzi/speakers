@@ -58,8 +58,8 @@ import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import com.tamzi.speakers.core.data.repository.UserNewsResourceRepository
 import com.tamzi.speakers.core.data.util.NetworkMonitor
-import com.tamzi.speakers.core.stage.component.NiaBackground
-import com.tamzi.speakers.core.stage.component.NiaGradientBackground
+import com.tamzi.speakers.core.stage.component.SpeakerBackground
+import com.tamzi.speakers.core.stage.component.SpeakerGradientBackground
 import com.tamzi.speakers.core.stage.component.NiaNavigationBar
 import com.tamzi.speakers.core.stage.component.NiaNavigationBarItem
 import com.tamzi.speakers.core.stage.component.NiaNavigationRail
@@ -71,7 +71,7 @@ import com.tamzi.speakers.core.stage.icon.NiaIcons
 import com.tamzi.speakers.core.stage.theme.GradientColors
 import com.tamzi.speakers.core.stage.theme.LocalGradientColors
 import com.tamzi.speakers.feature.settings.SettingsDialog
-import com.tamzi.speakers.navigation.NiaNavHost
+import com.tamzi.speakers.navigation.SpeakerNavHost
 import com.tamzi.speakers.navigation.TopLevelDestination
 import com.tamzi.speakers.R
 import com.tamzi.speakers.feature.settings.R as settingsR
@@ -82,11 +82,11 @@ import com.tamzi.speakers.feature.settings.R as settingsR
     ExperimentalComposeUiApi::class,
 )
 @Composable
-fun NiaApp(
+fun SpeakerApp(
     windowSizeClass: WindowSizeClass,
     networkMonitor: NetworkMonitor,
     userNewsResourceRepository: UserNewsResourceRepository,
-    appState: NiaAppState = rememberNiaAppState(
+    appState: SpeakerAppState = rememberNiaAppState(
         networkMonitor = networkMonitor,
         windowSizeClass = windowSizeClass,
         userNewsResourceRepository = userNewsResourceRepository,
@@ -95,8 +95,8 @@ fun NiaApp(
     val shouldShowGradientBackground =
         appState.currentTopLevelDestination == TopLevelDestination.FOR_YOU
 
-    NiaBackground {
-        NiaGradientBackground(
+    SpeakerBackground {
+        SpeakerGradientBackground(
             gradientColors = if (shouldShowGradientBackground) {
                 LocalGradientColors.current
             } else {
@@ -189,7 +189,7 @@ fun NiaApp(
                             )
                         }
 
-                        NiaNavHost(appState)
+                        SpeakerNavHost(appState)
                     }
 
                     // TODO: We may want to add padding or spacer when the snackbar is shown so that

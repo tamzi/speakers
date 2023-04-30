@@ -61,7 +61,7 @@ fun rememberNiaAppState(
     userNewsResourceRepository: UserNewsResourceRepository,
     coroutineScope: CoroutineScope = rememberCoroutineScope(),
     navController: NavHostController = rememberNavController(),
-): NiaAppState {
+): SpeakerAppState {
     NavigationTrackingSideEffect(navController)
     return remember(
         navController,
@@ -70,7 +70,7 @@ fun rememberNiaAppState(
         networkMonitor,
         userNewsResourceRepository,
     ) {
-        NiaAppState(
+        SpeakerAppState(
             navController,
             coroutineScope,
             windowSizeClass,
@@ -81,7 +81,7 @@ fun rememberNiaAppState(
 }
 
 @Stable
-class NiaAppState(
+class SpeakerAppState(
     val navController: NavHostController,
     val coroutineScope: CoroutineScope,
     val windowSizeClass: WindowSizeClass,
