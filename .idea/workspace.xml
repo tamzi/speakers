@@ -9,18 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96937b26-4a19-4b7a-831b-504a216bc32c" name="Changes" comment="refactor">
+    <list default="true" id="96937b26-4a19-4b7a-831b-504a216bc32c" name="Changes" comment="refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/NavigationUiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/NavigationUiTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/NiaAppStateTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/tamzi/speakers/ui/SpeakerAppStateTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/di/JankStatsModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/di/JankStatsModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/navigation/NiaNavHost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/navigation/SpeakerNavHost.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerAppState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tamzi/speakers/ui/SpeakerAppState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Background.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/stage/src/main/java/com/tamzi/speakers/core/stage/component/Background.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/interests/src/main/java/com/tamzi/speakers/feature/interests/InterestsScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/TopicScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/topic/src/main/java/com/tamzi/speakers/feature/topic/TopicScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/kotlin/AndroidFeatureConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/kotlin/AndroidFeatureConventionPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +73,7 @@
     "com.google.services.firebase.aqiPopupShown": "true",
     "last_opened_file_path": "/Users/franktamre/Documents/code/niamods/speakers/.github/workflows",
     "memory.settings.postsync.last.time.stamp": "1681481167898",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Build Variants",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2"
   }
@@ -318,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682889073808</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactoring">
+      <created>1682890923896</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682890923896</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +334,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>

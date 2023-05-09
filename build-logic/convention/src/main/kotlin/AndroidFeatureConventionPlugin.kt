@@ -35,7 +35,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             extensions.configure<LibraryExtension> {
                 defaultConfig {
                     testInstrumentationRunner =
-                        "com.google.samples.tamzi.nowinandroid.core.testing.NiaTestRunner"
+                        "com.tamzi.speakers.core.testing.NiaTestRunner"
                 }
                 configureGradleManagedDevices(this)
             }
