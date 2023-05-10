@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96937b26-4a19-4b7a-831b-504a216bc32c" name="Changes" comment="refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+    <list default="true" id="96937b26-4a19-4b7a-831b-504a216bc32c" name="Changes" comment="updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/kotlin/AndroidFeatureConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/kotlin/AndroidFeatureConventionPlugin.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +71,7 @@
     "com.google.services.firebase.aqiPopupShown": "true",
     "last_opened_file_path": "/Users/franktamre/Documents/code/niamods/speakers/.github/workflows",
     "memory.settings.postsync.last.time.stamp": "1681481167898",
-    "project.structure.last.edited": "Build Variants",
+    "project.structure.last.edited": "Suggestions",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2"
   }
@@ -318,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682890923896</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updates">
+      <created>1683606010246</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683606010246</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,6 +340,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
 </project>
