@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-// TODO: Remove once https://youtrack.jetbrains.com/issue/KTIJ-19369 is fixed
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     id("speakers.android.library")
     id("speakers.android.library.jacoco")
@@ -51,6 +49,13 @@ protobuf {
                 }
             }
         }
+    }
+}
+
+androidComponents.beforeVariants {
+    android.sourceSets.register(it.name) {
+        java.srcDir(buildDir.resolve("generated/source/proto/${it.name}/java"))
+        kotlin.srcDir(buildDir.resolve("generated/source/proto/${it.name}/kotlin"))
     }
 }
 

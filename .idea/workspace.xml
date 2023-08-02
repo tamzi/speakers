@@ -10,8 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96937b26-4a19-4b7a-831b-504a216bc32c" name="Changes" comment="updates">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/protoeditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/protoeditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/datastore/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/datastore/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/init.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/init.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +59,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2O4KYPApENqB7t1n8GoM0JYMgJ8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,6 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "last_opened_file_path": "/Users/franktamre/Documents/code/niamods/speakers/.github/workflows",
@@ -108,7 +115,6 @@
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
@@ -124,6 +130,8 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -131,14 +139,21 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
-      <Java />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
@@ -166,7 +181,6 @@
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
@@ -182,6 +196,8 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -189,14 +205,21 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
-      <Java />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
@@ -239,6 +262,8 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -246,14 +271,21 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
-      <Java />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
@@ -271,7 +303,6 @@
       <item itemvalue="Android App.catalog" />
       <item itemvalue="Android App.app" />
       <item itemvalue="Android Instrumented Tests.SettingsDialogTest" />
-      <item itemvalue="Gradle.Generate Demo Baseline Profile" />
     </list>
     <recent_temporary>
       <list>
@@ -323,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683606010246</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updates">
+      <created>1683703932789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683703932789</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
